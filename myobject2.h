@@ -2,16 +2,25 @@
 #define MYOBJECT2_H
 
 #include <QObject>
-
-class myobject2 : public QObject
+#include<QPropertyAnimation>
+#include<QPoint>
+#include <QPixmap>
+#include<QPainter>
+class Myobject2 : public QObject
 {
     Q_OBJECT
 public:
-    explicit myobject2(QObject *parent = nullptr);
-
+    Myobject2(QPoint startPos,QPoint targetPos,QString fileName);//起点，终点，一张图片的路径
+    void move();
+    void draw(QPainter*painter);
+private:
+    QPoint startPos;
+    QPoint currentPos;
+    QPoint targetPos;
+    QPixmap pixmap;
+    qreal  speed;
 signals:
 
-public slots:
 };
 
 #endif // MYOBJECT2_H

@@ -26,18 +26,28 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    newbutton.cpp \
     mywindow.cpp \
-    tower.cpp
+    newbutton.cpp \
+    tower.cpp \
+    myobject.cpp \
+    myobject2.cpp \
+    newbutton1.cpp
 
 HEADERS += \
         mainwindow.h \
-    newbutton.h \
     mywindow.h \
-    tower.h
+    newbutton.h \
+    tower.h \
+    myobject.h \
+    myobject2.h \
+    newbutton1.h
 
 FORMS += \
         mainwindow.ui
 
 RESOURCES += \
     resource.qrc
+
+DISTFILES += \
+    bullet.png \
+    mainb1.png

@@ -2,12 +2,14 @@
 #define NEWBUTTON1_H
 
 #include <QWidget>
-
-class newbutton1 : public QWidget
+#include <QPushButton>
+#include<QAction>
+#include<QPixmap>
+class Newbutton1 : public QPushButton
 {
     Q_OBJECT
 public:
-    explicit newbutton1(QWidget *parent = nullptr);
+    Newbutton1(QString pix1);
 
 signals:
 
