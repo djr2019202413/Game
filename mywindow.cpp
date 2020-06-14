@@ -18,6 +18,9 @@ MyWindow::MyWindow(QWidget *parent) : QWidget(parent)
     Newbutton*setTower2=new Newbutton(":/bullet2.png");//点击传塔
     setTower2->setParent(this);
     setTower2->move(300,530);
+    Newbutton*setTower3=new Newbutton(":/bullet2.png");//点击传塔 *bug
+    setTower3->setParent(this);
+    setTower3->move(300,330);
     Newbutton*setenemy=new Newbutton(":/bullet2.png");//点击传敌人
     setenemy->setParent(this);
     setenemy->move(800,600);
@@ -57,6 +60,7 @@ void MyWindow::set_tower1()
     tower_list.push_back(a_new_tower);
     update();//刷新
 }
+
 void MyWindow::addMyobject()
 {
 
