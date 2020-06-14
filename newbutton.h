@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QPushButton>
+#include<QAction>
+#include<QPixmap>
 class Newbutton : public QPushButton
 {
     Q_OBJECT
@@ -11,7 +13,7 @@ public:
     //void down();//向下跳
     //void up();//向上跳
 signals:
-
+   void chooseset();
 //public slots:
 };
 #endif//NEWBUTTON_H
